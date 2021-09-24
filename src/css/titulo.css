@@ -1,0 +1,15 @@
+.Titulo{
+    left: 1.2rem;
+    position: relative;
+}
+.Titulo p{
+    font-size: 1.5rem;
+    
+    border-left: solid;
+    border-left-width: 7px;
+    border-left-color: #075F40;
+}
+
+.Titulo p b{
+    padding: 0.5rem;
+}

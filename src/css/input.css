@@ -1,0 +1,45 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+.formulario{
+    padding: 5px;
+    position: relative;
+    text-align: center;
+    right: 0.5rem;
+}
+
+input{
+    border: 1px solid #075F40CC;
+    color: black;
+    width: 17rem;
+    height: 2.3rem;
+    padding-left: 1rem;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    text-indent: 2rem;
+}
+
+input::placeholder{
+    color: #0000005C;
+}
+
+.iconColor{
+    position: relative;
+    
+    left: 2.5rem;
+
+    color: #0000005C;
+}
+
+
+@media only screen and (max-width: 600px){
+
+    input{
+        border: 1px solid #EAEAEA;
+        background-color: #EAEAEA;
+    }
+
+}

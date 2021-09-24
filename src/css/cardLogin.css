@@ -1,0 +1,46 @@
+body{
+    font-family:'karla', sans-serif;
+}
+
+.cardLogin{
+    position: absolute;
+
+    width: 27rem;
+
+    z-index: 5;
+
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 7px;
+
+    top: 20%;
+
+    left: 35%;
+
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ifceLogin{
+    
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    justify-content: space-around;
+
+}
+
+@media only screen and (max-width: 600px){
+
+    .cardLogin{
+        top: 0;
+        width: 23rem;
+        box-shadow: none;
+        left: 0%;
+    }
+
+    
+    
+}

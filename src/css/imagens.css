@@ -1,0 +1,63 @@
+.Imagens{
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+    padding: 1rem;
+}
+
+.vertical-line-menu-inferior{
+
+    display: inline-block;
+    border-left: 2px dotted #ccc;
+    margin: 0 50px;
+    height: 130px;
+}
+.borderLogo{
+    border-right: 2px dotted gray;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    position: relative;
+    top: 15px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.LogoIfce{
+    width: 50%;
+}
+
+.LogoBD{
+    width: 35%;
+}
+
+@media only screen and (max-width: 600px){
+
+    .LogoIfce{
+        width: 40%;
+    }
+    
+    .LogoBD{
+        width: 25%;
+    }
+
+    .wrapper{
+        position: relative;
+        top: 10px;
+    }
+    
+    
+}
