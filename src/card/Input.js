@@ -4,8 +4,8 @@ import { useForm } from "react-hook-form";
 import '../css/input.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button from "../components/Button/Button";
 import Other from "../components/Input/Other";
+import Botao from "../components/Button/Botao";
 
 const Input = () => {
 
@@ -31,13 +31,15 @@ const Input = () => {
 
         <form onSubmit = { handleSubmit(onSubmit) }>
 
-            <div className="formulario">
+            <div className="form-group input-group flex-nowrap formulario">
 
-                <FontAwesomeIcon icon="user-circle" size="lg" className="iconColor"/>
+                {/*<FontAwesomeIcon icon="user-circle" size="lg" className="iconColor"/> */}
+
+                <span class="input-group-text iconChange" id="addon-wrapping"> {/*<FontAwesomeIcon icon="lock" size="xs" className="input-group-text iconChange iconColor" id="addon-wrapping"/> */}</span>                
 
                 <Other 
                     type="text"
-                    className="Matricula" 
+                    className="form-control Matricula" 
                     id="Matricula" 
                     name="Matricula"
                     value={matricula}
@@ -47,23 +49,25 @@ const Input = () => {
 
             </div>
 
-            <div className="formulario">
+            <div className="form-group input-group flex-nowrap formulario">
     
-                <FontAwesomeIcon icon="lock" size="lg" className="iconColor"/>
+                {/*<FontAwesomeIcon icon="lock" size="lg" className="iconColor"/>*/}
+
+                <span class="input-group-text iconChange" id="addon-wrapping"> @ </span>
 
                 <Other 
                     type="password"
-                    className="Senha" 
+                    className="form-control Senha" 
                     id="Senha" 
                     name="Senha"
                     value={senha}
-                    placeholder="Senha"
+                    placeholder=" Senha"
                     onChange={senhaEvento}
                      />
 
             </div>
 
-            <Button type="submit" disabled={!matricula || !senha} className="botao"> <p> <b> Login </b> </p></Button>
+            <Botao type="submit" disabled={!matricula || !senha} className="btn botao"> <p> Login </p> </Botao>
 
         </form>
         

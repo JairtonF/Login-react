@@ -9,8 +9,7 @@ const Titulo = () => {
             
             <p> <b> Autenticação </b> </p>
 
-        </div>
-        
+        </div>  
         
     );
 }

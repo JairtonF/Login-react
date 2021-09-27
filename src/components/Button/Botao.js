@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Button = ({ type, disabled, className, children}) => {
+const Botao = ({ type, disabled, className, children}) => {
 
     return(
 
@@ -13,4 +13,4 @@ const Button = ({ type, disabled, className, children}) => {
     
 }
 
-export default Button;
+export default Botao;

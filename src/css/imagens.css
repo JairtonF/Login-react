@@ -16,12 +16,14 @@
     margin: 0 50px;
     height: 130px;
 }
+
 .borderLogo{
     border-right: 2px dotted gray;
     display: flex;
     flex-direction: column;
     width: 170px;
     align-items: center;
+    padding: 1rem;
 }
 .wrapper{
     display: flex;
@@ -29,11 +31,11 @@
     align-items: center;
     width: 170px;
     position: relative;
-    top: 15px;
+    top: 10px;
 }
 
-h1{
-    font-size: 20px;
+.wrapper h1{
+    font-size: 1.5rem;
 }
 
 .LogoIfce{

@@ -8,7 +8,6 @@ form{
     padding: 5px;
     position: relative;
     text-align: center;
-    right: 0.5rem;
 }
 
 input{
@@ -19,11 +18,17 @@ input{
     padding-left: 1rem;
     background-color: #FFFFFF;
     font-size: 15px;
-    text-indent: 2rem;
+    /*text-indent: 2rem;*/
+    border-left:none ;
 }
 
 input::placeholder{
     color: #0000005C;
+}
+
+.iconChange{
+
+    height: 2.3rem;
 }
 
 .iconColor{

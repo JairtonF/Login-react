@@ -6,25 +6,32 @@
     text-align: center;
 }
 
-.botao{
+.btn.botao{
 
     border: 1px solid white;
     
     width: 17rem;
+
     height: 2.3rem;
 
     align-items: center;
     
     background-color: rgba(0, 109, 68, 1);
+
 }
 
 .botao p{
+
     color: white;
+    
+    font-weight: bold;
+
     font-size: 15px;
-    margin: 0.2rem;
 }
 
-button:disabled{
+.btn.botao:disabled{
+    
     color: rgb(97, 93, 93);
+
     background-color: #075f408f;
 }
