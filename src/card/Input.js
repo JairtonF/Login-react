@@ -34,10 +34,21 @@ const Input = () => {
             <div className="form-group input-group flex-nowrap formulario">
 
                 {/*<FontAwesomeIcon icon="user-circle" size="lg" className="iconColor"/> */}
+                
+                <span class="input-group-text iconChange" id="addon-wrapping"> @ </span>                 
 
-                <span class="input-group-text iconChange" id="addon-wrapping"> {/*<FontAwesomeIcon icon="lock" size="xs" className="input-group-text iconChange iconColor" id="addon-wrapping"/> */}</span>                
+                <input 
+                    {...register("Matricula", { required: true})}
+                    type="text"
+                    className="form-control Matricula" 
+                    id="Matricula" 
+                    name="Matricula"
+                    value={matricula} 
+                    placeholder="Matricula/SiAPE/CPF"
+                    onChange={matriculaEvento} />
 
-                <Other 
+                {/*<Other
+                    {...register("Matricula/SiAPE/CPF")}
                     type="text"
                     className="form-control Matricula" 
                     id="Matricula" 
@@ -45,7 +56,7 @@ const Input = () => {
                     value={matricula}
                     placeholder="Matricula/SiAPE/CPF"
                     onChange={matriculaEvento}
-                     />
+                />*/}
 
             </div>
 
@@ -55,7 +66,18 @@ const Input = () => {
 
                 <span class="input-group-text iconChange" id="addon-wrapping"> @ </span>
 
-                <Other 
+                <input 
+                    {...register("Senha", { required: true})}
+                    type="password"
+                    className="form-control Senha" 
+                    id="Senha" 
+                    name="Senha"
+                    value={senha}
+                    placeholder=" Senha"
+                    onChange={senhaEvento}/>
+
+                {/*<Other
+                    {...register("Senha")} 
                     type="password"
                     className="form-control Senha" 
                     id="Senha" 
@@ -63,7 +85,7 @@ const Input = () => {
                     value={senha}
                     placeholder=" Senha"
                     onChange={senhaEvento}
-                     />
+                />*/}
 
             </div>
 

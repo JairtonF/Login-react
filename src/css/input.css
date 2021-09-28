@@ -23,19 +23,14 @@ input{
 }
 
 input::placeholder{
-    color: #0000005C;
+    color: #00000046;
 }
 
 .iconChange{
-
     height: 2.3rem;
 }
 
 .iconColor{
-    position: relative;
-    
-    left: 2.5rem;
-
     color: #0000005C;
 }
 
